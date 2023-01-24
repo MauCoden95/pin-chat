@@ -75,6 +75,10 @@ body{
     outline: none;
 }
 
+.ipt_message:focus{
+    outline: .2rem solid #0284c7;
+}
+
 #screen div a{
     position: absolute;
     top: .5rem;
