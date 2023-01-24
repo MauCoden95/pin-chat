@@ -71,6 +71,7 @@ body{
     width: 100%;
     font-size: 2rem;
     padding: 1rem;
+    padding-left: 2rem;
     border-radius: 5rem;
     outline: none;
 }
@@ -79,18 +80,20 @@ body{
     outline: .2rem solid #0284c7;
 }
 
-#screen div a{
+#screen div button{
     position: absolute;
-    top: .5rem;
+    top: .4rem;
     right: .5rem;
-    padding: .5rem 3rem;
+    padding: .8rem 3rem;
     background: #0284c7;
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
     transition: 300ms;
+    border: none;
+    cursor: pointer;
 }
 
-#screen div a:hover{
+#screen div button:hover{
     background: #4ab7ee;
 }

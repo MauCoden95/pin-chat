@@ -31,9 +31,13 @@
 
     <section id="screen">
         <div>
-            <input type="text" name="name" class="ipt_message" autocomplete="off"/>
-            <a href=""><i class="fas fa-paper-plane"></i></a>
+            <form action="{{ route('store') }}" method="post">
+                @csrf
+                <input type="text" name="content" class="ipt_message" placeholder="Escriba su mensaje acá..." autocomplete="off"/>
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
         </div>
+        
         
     </section>
 
