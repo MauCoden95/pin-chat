@@ -30,7 +30,32 @@
 
 
     <section id="screen">
-        <div>
+        <div class="screen-msg">
+            @foreach($messages as $message)
+                @if($message->user_id == Auth::user()->id)
+                    <div class="content-msg-my">
+                        <div class="my-message"> 
+                            <h4>{{ $message->user_id }}</h4>
+                            <h4>{{ $message->created_at }}</h4>
+                            <h2>{{ $message->content }}</h2>
+                        </div>
+                    </div>
+                    
+                @else
+                    <div class="content-msg-theirs">
+                        <div class="theirs-message">
+                            <h4>{{ $message->user_id }}</h4>
+                            <h4>{{ $message->created_at }}</h4>
+                            <h2>{{ $message->content }}</h2>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+        
+
+
+        <div class="div-form">
             <form action="{{ route('store') }}" method="post">
                 @csrf
                 <input type="text" name="content" class="ipt_message" placeholder="Escriba su mensaje acá..." autocomplete="off"/>

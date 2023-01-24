@@ -7,6 +7,11 @@ use App\Models\Message;
 
 class MessageController extends Controller
 {
+    public function index(){
+        $messages = Message::All();
+
+        return view('dashboard', ['messages' => $messages]);
+    }
 
     public function create()
     {

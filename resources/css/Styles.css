@@ -56,15 +56,14 @@ body{
     height: 100vh;
     background-image: url('../assets/img/Fondo.jpg');
     background-size: cover;
+    overflow-y: scroll;
 }
 
-#screen div{
-    position: absolute;
+#screen .div-form{
+    position: fixed;
     bottom: 1rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 95%;
+    margin-left: .5rem;
+    width: 68%;
 }
 
 .ipt_message{
@@ -80,7 +79,7 @@ body{
     outline: .2rem solid #0284c7;
 }
 
-#screen div button{
+#screen .div-form button{
     position: absolute;
     top: .4rem;
     right: .5rem;
@@ -94,6 +93,59 @@ body{
     cursor: pointer;
 }
 
-#screen div button:hover{
+#screen .div-form button:hover{
     background: #4ab7ee;
+}
+
+
+.screen-msg{
+    margin: auto;
+    width: 95%;
+    min-height: 90%;
+    padding-bottom: 5rem;
+}
+
+.content-msg-my,
+.content-msg-theirs{
+    width: 100%;
+    height: 7rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.content-msg-my{
+    justify-content: flex-end;
+}
+
+.content-msg-theirs{
+    justify-content: flex-start;
+}
+
+.my-message{
+    min-width: 40%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+} 
+
+.theirs-message{
+    min-width: 40%;
+    height: 100%;
+    background: #4ab7ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.my-message h2,
+.theirs-message h2{
+    text-align: center;
+    font-size: 2rem;
 }
