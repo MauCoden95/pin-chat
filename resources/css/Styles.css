@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+}
+
+
+
+#header{
+    width: 30%;
+    height: 100vh;
+    background: #0284c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#header img{
+    margin: 2rem 0 0 0;
+}
+
+#header h1{
+    color: #fff;
+    font-size: 3rem;
+    margin: 3rem 0;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+#header a{
+    display: block;
+    background: #f00;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all 300ms;
+}
+
+#header a:hover{
+    background: rgb(255, 89, 89);
+}
+
+
+#screen{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    background-image: url('../assets/img/Fondo.jpg');
+    background-size: cover;
+}
+
+#screen div{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 95%;
+}
+
+.ipt_message{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    outline: none;
+}
+
+#screen div a{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    padding: .5rem 3rem;
+    background: #0284c7;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    transition: 300ms;
+}
+
+#screen div a:hover{
+    background: #4ab7ee;
+}
